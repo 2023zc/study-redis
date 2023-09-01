@@ -1,0 +1,26 @@
+spring:
+  #配置redistemplete操作redis集群
+  data:
+    redis:
+      cluster:
+        nodes:
+          - 192.168.37.130:6379
+          - 192.168.37.130:6380
+          - 192.168.37.130:6381
+          - 192.168.37.130:6389
+          - 192.168.37.130:6390
+          - 192.168.37.130:6391
+      timeout: 60000
+#      #配置redis
+#      host: 192.168.37.130
+#      port: 6379
+#      timeout: 10000
+#      #配置数据库初始索引
+#      database: 0
+#      password: 123456
+#      lettuce:
+#        pool:
+#          max-wait: 100000
+#          max-active: 200
+#          max-idle: 32
+#          min-idle: 8
